@@ -23,7 +23,7 @@ nav a{
 }
 /**************************MAIN***************************/
 main{
-    width: 100vw;
+    width: 100%;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ main{
 }
 .first img{
     width: 100%;
-    margin: auto;
+    
 }
 .first h2{
     text-align: center;
@@ -73,10 +73,12 @@ main{
 .second{
     width: 100%;
     margin-top: 70px;
+    background-color:  hsl(240, 75%, 98%);
+}
+.edit{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  hsl(240, 75%, 98%);
 }
 .imagen{
     width: 100%;
@@ -95,6 +97,7 @@ main{
 }
 .second h3{
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     color: hsl(243, 87%, 12%);
     margin-bottom: 20px;
 }
@@ -109,9 +112,6 @@ main{
  text-decoration: underline color rgb(51, 158, 140);
  color: rgb(51, 158, 140); 
  font-family: 'Open Sans', sans-serif;
-}
-.link{
-    margin-top: px;
 }
 .recomendation{
     display: flex;
@@ -162,11 +162,18 @@ main{
     height: 25px;
     border-radius: 50%;
 }
+.singin-dads{
+    width: 100%;
+    background-color: hsl(238, 22%, 44%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #singin{
- background-color: hsl(238, 22%, 44%);   
- display: flex;
- flex-direction: column;
- align-items: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #singin h3{
     text-align: center;
@@ -183,7 +190,7 @@ main{
 #singin form{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -206,16 +213,19 @@ main{
 footer{
     background-color: hsl(243, 87%, 12%);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.derecha{
-    margin-left: 30px;
+.last-izq{
+    width: 90%;
 }
-.derecha img{
+.contact img{
     margin-top: 50px;
     width: 200px;
+    margin-bottom: 30px;
 }
 .contact{
-    margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
 }
 .contact p{
@@ -237,7 +247,6 @@ footer{
     font-family: 'Open Sans', sans-serif;
 }
 .networks{
-    width: 100%;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -248,4 +257,107 @@ footer{
     border-radius: 50%;
     padding: 10px;
     margin-bottom: 40px;
+}
+@media only screen and (min-width:800px){
+    header{
+        justify-content: space-between;
+    }
+    header img{
+        margin-left: 40px;
+    }
+    nav{
+        margin-right: 40px;
+    }
+    .first{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .first img{
+        width: 50%;
+    }
+    .first h2{
+        text-align: start;
+        font-size: 20px;
+    }
+    .first p{
+        text-align: start;
+        margin-left: 0;
+    }
+    .first form{
+        flex-direction: row;
+    }
+    .first-email{
+        width: 65%;
+        margin-right: 10px;
+    }
+    .first-submit{
+        width: 40%;
+    }
+    .second{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+        background-image: url(./fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg);
+    }
+    .fake-second{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        margin-top: 30px;
+    }
+    .imagen img{
+        width: 100%;
+        height: fit-content;
+    }
+    .imagen{
+        background-image: none;
+        background-color: hsl(240, 75%, 98%);
+    }
+    .second-p{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .second h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .recomendation{
+        margin-top: 35px;
+    }
+    .second a{
+        margin-top: 25px;
+    }
+    .edit{
+        align-items: start;
+    }
+    #singin{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #singin h3{
+        text-align: start;
+    }
+    #singin p{
+        text-align: start;
+        margin: 20px 0;
+        width: 70%;
+    }
+    #singin form{
+        width: 100%;
+    }
+    .second-submit{
+        width: 40%;
+    }
+   .last-izq{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+   }
+   .networks{
+    height: fit-content;
+   }
 }
