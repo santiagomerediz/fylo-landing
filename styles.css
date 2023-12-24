@@ -109,9 +109,18 @@ main{
 }
 .second a{
  margin-top: 35px;
- text-decoration: underline color rgb(51, 158, 140);
  color: rgb(51, 158, 140); 
+ text-decoration: none;
  font-family: 'Open Sans', sans-serif;
+}
+.second a::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    background-color:  rgb(51, 158, 140);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .recomendation{
     display: flex;
@@ -271,9 +280,11 @@ footer{
     .first{
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
     }
     .first img{
         width: 50%;
+        max-width: 700px;
     }
     .first h2{
         text-align: start;
@@ -302,16 +313,21 @@ footer{
     .fake-second{
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
         width: 90%;
         margin-top: 30px;
     }
     .imagen img{
         width: 100%;
+        max-width: 700px;
         height: fit-content;
     }
     .imagen{
         background-image: none;
         background-color: hsl(240, 75%, 98%);
+        display: flex;
+        justify-content: flex-end;
     }
     .second-p{
         margin-left: 0;
@@ -353,11 +369,54 @@ footer{
     }
    .last-izq{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    margin-right: 40px;
    }
    .networks{
     height: fit-content;
    }
+}
+@media only screen and (min-width:1100px){
+    header img{
+        width: 150px;
+        margin-left: 70px;
+    }
+    nav{
+        margin-right: 70px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    .first{
+        justify-content: space-between;
+    }
+    .izq{
+        width: 40%;
+    }
+    .first h2{
+        font-size: 27px;
+        margin-bottom: 50px;
+    }
+    .first p{
+        font-size: 19px;
+        margin-bottom: 50px;
+    }
+    .second-p{
+        font-size: 19px;
+    }
+    #singin form{
+        width: 40%;
+        max-width: 700px;
+    }
+    .new-izq{
+        width: 40%;
+    }
+    #singin h3{
+        font-size: 23px;
+    }
+    #singin p{
+        font-size: 18px;
+    }
 }
